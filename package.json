@@ -22,12 +22,15 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test"
+    "test": "craco test",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "plugin:storybook/recommended"
     ]
   },
   "browserslist": {
@@ -50,8 +53,10 @@
     "@storybook/addon-onboarding": "^1.0.8",
     "@storybook/blocks": "^7.6.0",
     "@storybook/preset-create-react-app": "^7.6.0",
+    "@storybook/react": "^7.6.1",
     "@storybook/react-webpack5": "^7.6.0",
     "@storybook/test": "^7.6.0",
+    "eslint-plugin-storybook": "^0.6.15",
     "prop-types": "^15.8.1",
     "react-app-alias": "^2.2.2",
     "storybook": "^7.6.0",
